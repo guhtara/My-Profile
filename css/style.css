@@ -415,6 +415,36 @@ header #logo .logo-name {
   display: none;
 }
 
+/* work 
+--------------------------------------------------------*/
+.work-main {
+  text-align: center;
+}
+.work-main a {
+  text-decoration: none;
+}
+.hana_diary {
+  width: 90%;
+  margin: 2rem auto;
+}
+.hana_diary img {
+  width: 55%;
+  border: 3px outset #ffffff;
+}
+.hana_diary h4 {
+  color: #000000;
+}
+.hana_diary img:hover {
+  box-shadow: 0 5px 10px #4896a8;
+  transform: translate(0, -5px);
+  transition: 0.3s;
+}
+.hana_diary h4:hover {
+  color: #4896a8;
+  transition: 1s;
+  transform: rotateX(360deg);
+}
+
 /* contact */
 #contact {
   text-align: center;
