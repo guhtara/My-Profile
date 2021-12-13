@@ -106,12 +106,13 @@ h2 {
   transform: translate(0, 0);
 }
 
-/* header */
+/* header 
+------------------------------------------------------------------------*/
 header {
   height: 100%;
   overflow: auto;
   position: relative;
-  background: url(../images/mainimg.jpg) no-repeat center center / cover; /*背景画像の読み込み*/
+  background: url(../images/mainimg.jpg) no-repeat center center / cover; 
 }
 header #logo {
   display: block;
@@ -130,7 +131,8 @@ header #logo .logo-name {
   font-family: serif;
 }
 
-/* menu・nav */
+/* menu・nav 
+-------------------------------------------------------------------------------------*/
 #menubar {
   position: absolute;
   bottom: 20%;
@@ -162,7 +164,8 @@ header #logo .logo-name {
   display: none;
 }
 
-/* about */
+/* about 
+----------------------------------------------------------------------------*/
 #about {
   margin: 0;
   overflow: hidden;
@@ -191,16 +194,17 @@ header #logo .logo-name {
   margin: 10px auto 0;
 }
 
-/* service */
+/* service 
+----------------------------------------------------------------------------------------------*/
 .service-contents {
-  background-color: #eee; /* 背景色指定 */
-  padding: 10px; /* 余白指定 */
+  background-color: #eee; 
+  padding: 10px; 
   text-align: center;
 }
 .list {
   padding: 10px;
-  margin: 10px; /* 外側の余白 */
-  border-radius: 5px; /* 角丸指定 */
+  margin: 10px; 
+  border-radius: 5px; 
   max-width: 300px;
 }
 .list h4 {
@@ -245,7 +249,8 @@ header #logo .logo-name {
   background-color: #000;
 }
 
-/* vision */
+/* vision 
+------------------------------------------------------------------------------*/
 #vision {
   margin: 0 auto;
 }
@@ -445,7 +450,8 @@ header #logo .logo-name {
   transform: rotateX(360deg);
 }
 
-/* contact */
+/* contact 
+-----------------------------------------------------------------------------*/
 #contact {
   text-align: center;
 }
@@ -546,7 +552,8 @@ textarea.form-control {
   color: white;
 }
 
-/* footer */
+/* footer 
+----------------------------------------------------------------------------*/
 footer {
   clear: both;
   text-align: center;
@@ -610,7 +617,8 @@ footer .pr {
     font-family: serif;
   }
 
-  /*ハンバーガーメニュー*/
+  /*ハンバーガーメニュー
+  ---------------------------------------------------------------------------------*/
   #menubar {
     display: none;
   }
@@ -730,7 +738,8 @@ footer .pr {
     font-size: 14px;
   }
 
-  /* about */
+  /* about 
+  -----------------------------------------------------------------------------------*/
   .about-main {
     display: inline-block;
     text-align: center;
@@ -743,7 +752,8 @@ footer .pr {
     display: block;
   }
 
-  /*Serviceページ*/
+  /* service
+  ---------------------------------------------------------------------------------*/
   .flex {
     display: none;
   }
@@ -826,8 +836,16 @@ footer .pr {
     transform: translate(-50%, 25%);
     opacity: 0.7;
   }
+  
+    /* work
+  ------------------------------------------------------------------------------------*/
+  .hana_diary img {
+    width: 80%;
+    border: 3px outset #ffffff;
+  }
 
-  /* contact */
+  /* contact 
+  -------------------------------------------------------------------------------------*/
   input#form-name {
     width: 80%;
     height: 25px;
