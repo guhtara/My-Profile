@@ -1,4 +1,5 @@
-/* effect-fade */
+/* effect-fade 
+--------------------------------------------------------------------------*/
 window.onload = function () {
   scroll_effect();
 
@@ -18,7 +19,8 @@ window.onload = function () {
   }
 };
 
-/* load */
+/* load 
+-------------------------------------------------------------------------*/
 $(window).on("load", function () {
   $("#splash").delay(2500).fadeOut("slow");
   $("#splash_logo").delay(1500).fadeOut("slow");
@@ -41,7 +43,8 @@ $(function () {
   });
 });
 
-/* NEXT INNOVATION (modal) */
+/* NEXT INNOVATION (modal) 
+-----------------------------------------------------------------------------*/
 $(function () {
   $(".vision-modal").on("click", function () {
     $(".modal-contents").fadeIn();
@@ -53,7 +56,8 @@ $(function () {
   });
 });
 
-/* page_top */
+/* page_top 
+----------------------------------------------------------------------------------*/
 $(function () {
   var pagetop = $("#page_top");
   pagetop.hide();
@@ -69,7 +73,7 @@ $(function () {
       {
         scrollTop: 0,
       },
-      100
+      300
     );
     return false;
   });
