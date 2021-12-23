@@ -876,6 +876,27 @@ footer .pr {
   .hana_diary img {
     width: 100%;
   }
+  .hana_diary::before,
+  .hana_diary::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 2;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    box-sizing: content-box;
+  }
+  .hana_diary:hover {
+    color: #00cec9;
+  }
+  .hana_diary:hover::before,
+  .hana_diary:hover::after {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
 
   /* contact 
   -------------------------------------------------------------------------------------*/
