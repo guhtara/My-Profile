@@ -424,30 +424,54 @@ header #logo .logo-name {
 --------------------------------------------------------*/
 .work-main {
   text-align: center;
+  margin: 20px;
 }
 .work-main a {
   text-decoration: none;
 }
 .hana_diary {
-  width: 90%;
-  margin: 2rem auto;
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 4em;
+  border: 2px solid #f0f0f0;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s;
 }
 .hana_diary img {
-  width: 55%;
-  border: 3px outset #ffffff;
+  width: 50%;
 }
-.hana_diary h4 {
-  color: #000000;
+.hana_diary::before,
+.hana_diary::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 2;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  box-sizing: content-box;
 }
-.hana_diary img:hover {
-  box-shadow: 0 5px 10px #4896a8;
-  transform: translate(0, -5px);
-  transition: 0.3s;
+.hana_diary:hover {
+  color: #00cec9;
 }
-.hana_diary h4:hover {
-  color: #4896a8;
-  transition: 1s;
-  transform: rotateX(360deg);
+.hana_diary:hover::before,
+.hana_diary:hover::after {
+  width: 50%;
+  height: 100%;
+  left: 25%;
+}
+.hana_diary:hover::before {
+  border-top-color: #00cec9;
+  border-right-color: #00cec9;
+  transition: width 0.3s, height 0.3s 0.3s;
+}
+.hana_diary:hover::after {
+  border-bottom-color: #00cec9;
+  border-left-color: #00cec9;
+  transition: height 0.3s, width 0.3s 0.3s;
 }
 
 /* contact 
@@ -839,9 +863,18 @@ footer .pr {
   
     /* work
   ------------------------------------------------------------------------------------*/
+  .hana_diary {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #f0f0f0;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    transition: all 0.2s;
+  }
   .hana_diary img {
-    width: 80%;
-    border: 3px outset #ffffff;
+    width: 100%;
   }
 
   /* contact 
